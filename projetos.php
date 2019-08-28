@@ -17,18 +17,18 @@
             <div class="container col-lg-2"></div>
             <div class="col-lg-8">
                 <div>
-                  <h5 class="post-title"><?php the_field('titulo_do_projeto'); ?></h5>
+                  <h5 class="post-title">Galhardo Python RPG</h5>
                 </div>
                 <div class="card-body">
-                  <p><?php the_field('resumo_do_projeto'); ?></p>
+                  <p class="card-text">Projeto desenvolvido na linha de comando com o intuito de aprender a linguagem Python, conceitos de programação orientado a objetos como SOLID e Design Patterns, melhores práticas de programação como Clean Code, KISS, DRY, uso de módulos, etc. Muito bom para se divertir nas horas vagas 😃</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="<?php the_field('preview_do_projeto'); ?>"><button type="button" class="btn btn-sm btn-outline-warning shadow">Preview</button></a>
+                      <a href="#"><button type="button" class="btn btn-sm btn-outline-warning shadow">Preview</button></a>
                     </div>
                     <div class="btn-group">
-                      <a href="<?php the_field('githubcode_do_projeto'); ?>"><button type="button" class="btn btn-sm btn-outline-primary shadow">GitHub Code</button></a>
+                      <a href="https://github.com/AlexGalhardo/Galhardo-RPG"><button type="button" class="btn btn-sm btn-outline-primary shadow">GitHub Code</button></a>
                     </div>
-                    <small style="color: red;"><strong><?php the_field('desenvolvendo_concluido'); ?></strong></small>
+                    <small style="color: red;"><strong>Desenvolvendo...</strong></small>
                   </div>
                 </div>
             </div>

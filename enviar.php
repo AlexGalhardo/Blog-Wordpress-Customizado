@@ -1,21 +1,23 @@
 <?php
+// Template Name: Enviar
+?>
+
+<?
 /** ANTIGO FORMATO 
 // Mudar Aqui o e-mail
 
-$email_envio = ''; // E-mail receptor
-$email_pass = ''; // Senha do e-mail
+$email_envio = 'contatoalexgalhardo@gmail.com'; // E-mail receptor
+$email_pass = 'galhardoalexBR@159'; // Senha do e-mail
 
-$site_name = ''; // Nome do Site
-$site_url = ''; // URL do Site
+$site_name = 'Galhardo Blog'; // Nome do Site
+$site_url = 'http://localhost/wordpress'; // URL do Site
 
 $host_smtp = 'smtp.gmail.com'; // HOST SMTP Ex: smtp.domain.com.br
-$host_port = '465'; // Porta do Host
+$host_port = '587'; // Porta do Host
 
 // Variáveis do Formulário
 
-$nome = $_POST['nome'];
 $email = $_POST['email'];
-$telefone = $_POST['telefone'];
 $mensagem = $_POST['mensagem'];
 
 // Conteúdo do Formulário
@@ -104,9 +106,9 @@ if(!$mail->send()) {
 /** NOVO FORMATO **/
 
 // Trocar os valores abaixo
-$emailenvio = 'aleexgvieira@gmail.com';
+$emailenvio = 'contatoalexgalhardo@gmail.com';
 $assunto = 'Contato Galhardo Blog';
-$url = 'http://localhost/wordpress';
+$url = 'https://alexgalhardo.com';
 
 // Mude até aqui apenas
 $email = $_POST['email'];
@@ -144,4 +146,5 @@ if(!$mail->send()) {
 }
 
 }
+
 ?>

@@ -87,7 +87,7 @@
 	        <div class="form-inline mt-2 mt-md-0">
             <a href="https://github.com/alexgalhardo" title="github.com/AlexGalhardo" style="margin-right: 5px;" target="_blank"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
 
-            <a href="#" title="aleexgvieira@gmail.com" data-toggle="modal" data-target="#modalContact"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i></a>
+            <a href="/wordpress/contato" title="aleexgvieira@gmail.com"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i></a>
           </div>
 
           <div class="form-inline mt-2 mt-md-0">
@@ -122,30 +122,3 @@
       </div>
     </div>
     <!-- END Modal Sobre -->
-
-
-    <!-- Modal Contact -->
-    <div class="modal fade" id="modalContact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <form name="contact" method="POST" action="<?php echo get_template_directory_uri(); ?>/enviar.php" class="formphp">
-            <p class="hidden">
-            <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-          </p>
-              <div class="form-group">
-                <label for="exampleFormControlInput1">Email</label>
-                <input type="email" name="email" id="email" class="form-control" id="email" placeholder="Digite o seu email">
-              </div>
-              <div class="form-group">
-                <label for="exampleFormControlTextarea1">Mensagem</label>
-                <textarea class="form-control" id="menssgem" name="mensagem" rows="6" placeholder="Digite sua mensagem"></textarea>
-              </div>
-              <div class="form-group" data-netlify-recaptcha="true"></div>
-              <button type="submit" id="enviar" name="enviar" class="btn btn-outline-primary">Enviar</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- END Modal Contact -->

@@ -1,5 +1,9 @@
-docs/phpdoc/
+docs/*
+!docs/README.md
 test/message.txt
 test/testbootstrap.php
-.idea
 build/
+vendor/
+*.pem
+composer.lock
+.php_cs.cache

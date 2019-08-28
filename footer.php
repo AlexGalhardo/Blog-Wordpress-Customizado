@@ -12,7 +12,7 @@
 
 
     <!-- Scripts JS -->
-    <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/jquery-3.1.1.min.js"></script>
     <script src="<?php echo get_stylesheet_directory_uri(); ?>/scripts.js"></script>
 
     <!-- Bootstrap core JavaScript -->
