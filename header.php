@@ -103,9 +103,7 @@
           </div>
 
 	      </div>
-
       </li>
-
     </nav>
 
 
@@ -131,20 +129,20 @@
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-body">
-            <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-netlify="true" action="/success">
+            <form name="contact" method="POST" action="<?php echo get_template_directory_uri(); ?>/enviar.php" class="formphp">
             <p class="hidden">
             <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
           </p>
               <div class="form-group">
                 <label for="exampleFormControlInput1">Email</label>
-                <input type="email" name="email" class="form-control" id="email" placeholder="Digite o seu email">
+                <input type="email" name="email" id="email" class="form-control" id="email" placeholder="Digite o seu email">
               </div>
               <div class="form-group">
                 <label for="exampleFormControlTextarea1">Mensagem</label>
-                <textarea class="form-control" id="message" rows="6" placeholder="Digite sua mensagem" name="message"></textarea>
+                <textarea class="form-control" id="menssgem" name="mensagem" rows="6" placeholder="Digite sua mensagem"></textarea>
               </div>
               <div class="form-group" data-netlify-recaptcha="true"></div>
-              <button type="submit" class="btn btn-outline-primary">Enviar</button>
+              <button type="submit" id="enviar" name="enviar" class="btn btn-outline-primary">Enviar</button>
             </form>
           </div>
         </div>
