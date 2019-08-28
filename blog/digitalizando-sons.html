@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+  <head>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145847620-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-145847620-1');
+    </script>
+
+
+    <!-- SEO Title -->
+    <title>Digitalizando Sons</title>
+
+    <!-- Charset UTF8 -->
+    <meta charset="utf-8">
+
+    <!-- responsive tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO description -->
+    <meta name="description" content="Transcrevendo um artigo bastante interessante de como computadores e tecnologia digital processam sons.">
+
+    <!-- Author -->
+    <meta name="author" content="Alex Galhardo">
+
+    <!-- Site Icon -->
+    <link rel="icon" href="avatar.png" type="image/x-icon"/>
+
+    <!-- NavBar Emojis -->
+    <script src="https://use.fontawesome.com/41c2dcb978.js"></script>
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://alexgalhardo.com/blog/digitalizando-sons">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Style CSS -->
+    <link href="../style.css" rel="stylesheet">
+
+  </head>
+
+  
+  <body>
+
+    <!-- Start Scroll Bar -->
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+    <!-- End Scroll Bar -->
+
+
+    <nav class="navbar navbar-expand-xl navbar-light fixed-top" style="background-color: white;">
+
+      <div class="container col-lg-6">
+
+        <a class="navbar-brand" href="../index.html" style="color: blue;"><img src="https://avatars3.githubusercontent.com/u/19540357?s=460&v=4" height="35" width="35">Galhardo Blog</a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarText">
+          
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link btn-outline-primary" data-toggle="modal" data-target="#modalSobre" href="#">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn-outline-primary" href="../tutoriais.html">Tutoriais</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn-outline-primary" href="../projetos.html">Projetos</a>
+            </li>
+          </ul>
+          
+          <div class="form-inline mt-2 mt-md-0">
+            <a href="https://github.com/alexgalhardo" title="github.com/AlexGalhardo" style="margin-right: 5px;" target="_blank"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+
+            <a href="#" title="aleexgvieira@gmail.com" data-toggle="modal" data-target="#modalContact"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i></a>
+          </div>
+
+          <div class="form-inline mt-2 mt-md-0">
+            <ul class="form-inline navbar-nav mr-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  🇧🇷 Português
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" title="In development..." href="#">🇺🇸 English</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </li>
+    </nav>
+
+
+    <!-- Modal Sobre -->
+    <div class="modal fade" id="modalSobre" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p>Esse blog é desenvolvido e mantido por um estudante, entusiasta e apaixonado por tecnologia, no qual se proponhe a compartilhar conhecimentos diversos não só sobre a área, mais também sobre diversos outros assuntos e reflexões que considera útil compartilhar.</p>
+            <p>Tudo que é compartilhado aqui são tanto para estudos pessoais do autor, assim como um meio de colocar o conhecimento em prática, como a escrita em inglês e o desenvolvimento web. Para resumir, compartilho aqui tudo o que eu gostaria que compartilhassem comigo.</p>
+            <p>Espero que o blog seja útil para você.</p>
+            <br>
+            <p class="text-center"><strong>“Se eu vi mais longe, foi por estar sobre ombros de gigantes.”</strong><br><br>- Isaac Newton</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END Modal Sobre -->
+
+
+
+    <!-- Modal Contact -->
+    <div class="modal fade" id="modalContact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          
+          <div class="modal-body">
+            <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-netlify="true" action="/success">
+            <p class="hidden">
+            <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+          </p>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Email</label>
+                <input type="email" name="email" class="form-control" id="email" placeholder="Digite o seu email">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Mensagem</label>
+                <textarea class="form-control" id="message" rows="6" placeholder="Digite sua mensagem" name="message"></textarea>
+              </div>
+              <div class="form-group" data-netlify-recaptcha="true"></div>
+              <button type="submit" class="btn btn-outline-primary">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END Modal Contact -->
+  
+
+
+    <main role="main container col-lg-12">
+      <section class="blog-text container col-lg-6">
+        <br><br><br><br>
+
+        <h4 class="text-center"><strong>Digitalizando Sons</strong></h4>
+        <h6 class="text-center text-muted">5 minutos de leitura</h6>
+        <h6 class="text-center text-muted">Transcrevendo</h6>
+        <br>
+        <h6 class="text-muted">
+            Obs: Esse texto é de total autoria e todos os créditos são de <a href="http://www.bpiropo.com.br">© Benito Piropo Da-Rin</a>. 
+            <br>
+            O texto original foi retirado de: <a href="http://www.bpiropo.com.br/fpc20050110.htm">http://www.bpiropo.com.br/fpc20050110.htm</a>    
+            <br>
+            Compartilho o texto aqui tanto para estudos pessoais como para compartilhar para mais pessoas que se interessam por esse conhecimento.
+        </h6>
+        <br>
+
+        <p>Nas duas últimas colunas examinamos o processo de digitalização de imagens. E mencionamos que qualquer grandeza do mundo real pode ser digitalizada, ou seja, convertida em números que podem ser expressos no sistema binário e, portanto, processados por um computador. Mas seria isso realmente possível? Como digitalizar, por exemplo, sons?</p>
+
+<p>Computadores são um fenômeno recente. Portanto não é de admirar que a digitalização de sons também o seja. Na verdade, foi apenas em 1983 que os primeiros discos com som digitalizado foram produzidos graças à uma tecnologia desenvolvida pelas empresas Sony e Phillips. Quando comparados aos discos de vinil que se usavam na época, os discos de áudio digital eram menores, mais compactos e por isso receberam o nome de “discos compactos”, ou Compact Disks, e passaram a ser conhecidos apenas por “CDs”.</p>
+
+<p>Sim, é isso mesmo, os CDs que usamos hoje para dados nada mais são que a transposição para armazenamento de dados e informações da tecnologia usada para armazenar música digitalizada. Afinal, depois de digitalizada, toda informação é representada por números, e portanto nada impede que se use a mesma tecnologia de armazenamento para qualquer tipo de dado, música, imagens ou seja lá o que for.</p>
+
+<p>É fato que os primeiros CDs de áudio não foram feitos para serem reproduzidos em um computador pessoal. Na verdade, no que diz respeito à reprodução de sons, os computadores pessoais do início da década de oitenta eram máquinas toscas. Seu pequeno alto-falante somente reproduzia bipes, que eram usados principalmente como alarme e aviso de erros. Mas os reprodutores de CDs (“CD players”) da época adotavam rigorosamente a mesma tecnologia empregada pelos modernos computadores multimídia para a reprodução de sons.</p>
+
+<p>Mas voltemos ao que interessa: como digitalizar sons?</p>
+
+<p>Aquilo que conhecemos como “som” na verdade nada mais é que uma sucessão de compressões e descompressões do ar. Ou seja: som é ar que vibra. Me refiro, evidentemente, ao som que se propaga no ar. Para o indivíduo mal-educado que encosta o ouvido à parede para ouvir o que se fala do outro lado, som é a parede que vibra. Para quem está mergulhando próximo ao fundo de uma piscina e ainda assim consegue ouvir os ruídos do ambiente acima dele, som é água que vibra. Em suma: som é algo que vibra e se propaga seja pelo ar, através de compressões e descompressões, seja através de um material sólido ou líquido, que vibra em consonância com o som produzido.</p>
+
+<p>Repare na animação da Figura 1. Imagine que a linha marrom que se encurva para cima e para baixo seja, por exemplo, uma corda de violão ou piano, vibrando após ter sido tangida. As linhas azuis representam as camadas de ar que se situam entre a corda que vibra e seu ouvido. Note que quando a corda se encurva para cima, no sentido de seu ouvido, ela “empurra” as camadas de ar umas contra as outras, aumentando a pressão. Já quando a corda vibra no sentido contrário, ela “puxa” o ar, distendendo-o (não se esqueça que o ar é um gás elástico; é por isso que bolas de futebol “quicam”) e reduzindo a pressão. E na medida que a corda vibra em ambos os sentidos, a pressão aumenta e diminui de acordo com esta vibração. Seu ouvido é, na verdade, um instrumento de extrema precisão capaz de medir as menores variações da pressão do ar. </p>
+
+<p>Veja, do lado direito da animação, um gráfico da variação desta pressão sincronizado com o movimento da corda. Quando a corda sobe, aumentando a pressão, a linha marrom se projeta para cima até atingir ponto máximo quando a corda atinge sua curvatura máxima. Em seguida a pressão começa a diminuir, chegando a zero, quando a corda fica completamente estendida na horizontal, e passando a partir de então a assumir valores negativos até o valor mínimo, que corresponde à curvatura máxima da corda no sentido oposto. O vai-vem da corda, que comprime e descomprime o ar, se reflete no gráfico em forma de onda do lado direito da figura. </p>
+
+<p>É assim que se forma uma “onda sonora”. Note que a difusão de ciclos de compressão-descompressão ao longo de um meio elástico nada mais é que a propagação de uma forma de energia, a energia sonora. Essas compressões e descompressões penetram no nosso pavilhão auricular, se propagam em seu interior até incidir sobre uma fina membrana chamada “tímpano” situada no limite do chamado “ouvido externo” (na verdade, ela o separa do ouvido médio), fazendo-a vibrar. A vibração do tímpano se propaga até as terminações nervosas do ouvido interno que a conduz ao cérebro. Que então “traduz” aquelas vibrações nos sons que percebemos.</p>
+
+<p>Todo som tem duas características básicas: intensidade (que nos permite distinguir entre um som forte ou fraco; um grito é um som mais intenso que um sussurro) e altura (que nos permite distinguir entre um som grave e agudo; o trinado de um pássaro é mais agudo que o rosnar de um cão). É preciso ter cuidado com esses conceitos, já que na linguagem popular diz-se que um som é “alto” querendo com isso dizer que ele é intenso. “Abaixar” o rádio, para o leigo, significa reduzir a intensidade do som, não sua altura.</p>
+
+<p>As variações de intensidade e altura dos sons se refletem na forma de suas ondas. Veja na Figura 2 a diferença entre as formas das ondas de sons de diferentes intensidades e alturas. No alto estão representadas formas de onda de sons de mesma altura e diferentes intensidades (o da esquerda é mais intenso, ou seja, mais forte) e embaixo sons de mesma intensidade e diferentes alturas (o da direita é mais alto, ou seja, mais agudo). Como se pode depreender do exame da Figura 2, a intensidade do som depende da amplitude da onda (ou seja, de quanto seus picos e vales se afastam da linha base) enquanto a altura depende da freqüência da onda, ou seja, do número de vezes que ela vibra na unidade de tempo.</p>
+
+
+<img class="img-responsive" src="../images/digitalizando-sons-fig1.jpg" alt="fig1">
+
+<p>Isso não é apenas teoria. Os sons que ouvimos na vida real são mesmo representados por ondas como as mostradas na Figura 2. A diferença é que qualquer uma das quatro ondas sonoras representadas na Figura 2 correspondem a sons cuja intensidade e altura não variam ao longo do tempo (ou seja, cujas amplitude e freqüências se mantêm constantes) e portanto produzem um som monótono (de apenas um tom), que não se altera, como um diapasão vibrando sempre na mesma intensidade. Já as ondas que representam os sons da vida real mostram variações tanto na intensidade (amplitude) quanto na altura (freqüência), assumindo um formato menos regular.</p>
+
+
+<img class="img-responsive" src="../images/digitalizando-sons-fig2.jpg" alt="fig2">
+
+<p>A Figura mostra a forma de onda de um som simples, um mero “bump”, cuja simplicidade se reflete na relativamente pequena variação do formato da onda sonora. Se você quiser ter idéia do som a que corresponde esta forma de onda, clique no ícone do Objeto 1.</p>
+
+
+<p>Do que vimos aqui podemos concluir que, não importa qual seja seu grau de complexidade, todo e qualquer som pode ser fielmente representado por uma onda sonora. Não importa que seja um grito de dor, um mavioso trinado de um pássaro ou uma sublime melodia, seja ele qual for, haverá uma onda cujo formato o representará.</p>
+
+<p>Falta ver como poderemos exprimir essa onda usando apenas números.</p>
+
+<p>Semana passada vimos as características do som e concluímos lembrando que, seja qual for seu grau de complexidade, todo e qualquer som pode ser fielmente representado por uma onda sonora. E vimos ainda que o “desenho” da onda reflete as duas características principais do som: intensidade e freqüência (também chamada de “altura”). Vamos esclarecer melhor isso usando como exemplo o tipo de onda mais comum, a onda senoidal (que tem esse nome porque representa a variação do valor do seno de um ângulo, ou seja, é a representação gráfica da função “y = sen x”) como a representada na Figura. </p>
+
+
+<img class="img-responsive" src="../images/digitalizando-sons-fig3.jpg" alt="fig3">
+<p>Interprete a Figura como a representação gráfica da variação da intensidade do som instante a instante ao longo do tempo. Como se vê, nesse exemplo, a intensidade parte de zero, sobe até o valor máximo (crista ou pico da onda) e em seguida começa a declinar, caindo novamente até zero (quando atravessa a linha horizontal que representa o eixo do tempo), continua diminuindo de intensidade (assumindo, portanto, valores negativos) até o ponto mínimo (vale da onda), quando volta a crescer até nova crista e assim por diante.</p>
+
+<p>A amplitude da onda, que reflete sua intensidade, corresponde à distância vertical entre um pico e um vale sucessivos. Na Figura 1 a amplitude corresponde à distância entre os pontos “c” e “d”. Quanto maior essa distância, mais intenso (ou seja, mais “barulhento”) é o som.</p>
+
+<p>Já a freqüência da onda é definida pelo número de ciclos que ocorrem em uma unidade de tempo. Explicando melhor: o “ciclo” da onda é o trecho que contém uma crista e um vale completos. Na Figura 1 ele corresponde ao trecho compreendido entre os pontos “a” e “b”. Pois bem: a freqüência é o número de ciclos que ocorrem em cada segundo. Sua unidade denomina-se Hertz e corresponde a uma onda que executa um ciclo por segundo e cujo som é inaudível, pois nosso ouvido não é capaz de percebê-lo (mas nem por isso deixa de ser um som...) </p>
+
+<p>Embora as pessoas de ouvidos mais sensíveis possam apenas identificar sons cujas freqüências variam na faixa de 20 Hz a 20.000 Hz (ou 20 KHz, quilohertz), vibrações com freqüências superiores ou inferiores continuam sendo sons, apenas não conseguimos ouvi-los (quem conhece os “apitos para cães” pode entender melhor a questão; como o ouvido dos cães é muito mais sensível que o nosso, eles conseguem perceber claramente sons de freqüências muito mais elevadas que 20 KHz; soprar um apito desses junto a um cachorro, embora você não ouça absolutamente nada, faz o cão imediatamente dar mostras de ter ouvido o som produzido pelo apito em uma freqüência que ele percebe mas você não).</p>
+
+<p>Resumindo: a forma, ou “desenho” da onda, contém as duas informações básicas que definem o som: sua intensidade, medida em cada instante pela amplitude, e sua freqüência, proporcional ao número de vezes que a linha que define a onda corta o eixo horizontal a cada segundo (na verdade, igual á metade desse número, já que em cada ciclo a onda corta o eixo duas vezes, ao subir e ao descer). Agora, com esses conceitos em mente, examine novamente as ondas representadas nas Figuras 3 e 4 da coluna anterior e perceba como a complexidade do som se reflete no formato da onda que o define.</p>
+
+<p>Então, para digitalizar o som, tudo o que precisamos é uma forma de representar o formato da onda usando apenas números. Uma coisa tão fácil como uma brincadeira de criança. E não estou usando uma figura de linguagem, estou me referindo efetivamente a uma brincadeira de criança, aquela que consiste em desenhar uma figura unindo com um traço contínuo pontos numerados.</p>
+
+<p>A essência do problema consiste no fato de que a onda sonora é representada por uma linha contínua, que apresenta variações infinitesimais ao longo do tempo. Em outras palavras: é “analógica”. Computadores lidam mal com grandezas analógicas. A solução é decompor a grandeza em uma enorme quantidade de pequenos   componentes e representar cada um deles por um número (ou seja, “digitalizar” a grandeza). Quanto maior a quantidade desses componentes, melhor será representada a grandeza. Por exemplo: o espectro luminoso contínuo que compõe o arco-íris uma grandeza analógica. </p>
+
+<p>Mas, como vimos ao discutirmos a digitalização de imagens, ele pode ser decomposto em pequenos segmentos, cada um deles representando uma cor e correspondendo a um número. Quando este número de segmentos é pequeno (por exemplo, 256) o conjunto de cores fica mal representado. Se aumentarmos para 65.536 (64K), teremos uma imagem muito mais suave. E se aumentarmos para mais de 16 milhões de segmentos, teremos uma representação absolutamente fiel das cores. Nosso problema consiste em fazer algo parecido com os sons: representar a forma de uma onda sonora com números.</p>
+
+<p>Primeiro, vamos tomar o gráfico sobre o qual desenhamos a onda e dividi-lo na forma de uma grade formada por linhas verticais. Veja isto representado na Figura.</p>
+
+
+<img class="img-responsive" src="../images/digitalizando-sons-fig4.jpg" alt="fig4">
+<p>Nesse gráfico, o eixo vertical representa o valor da intensidade do som e o eixo horizontal representa o tempo decorrido. A distância entre duas linhas verticais que formam a grade representa, portanto, um intervalo de tempo. Digamos que, no gráfico acima, esse intervalo seja da ordem de um décimo milésimo de segundos. Portanto, na distância horizontal correspondente a um segundo, teríamos dez mil dessas linhas verticais, cada uma representando um instante. Em cada um desses instantes colheremos uma “amostra” de nosso som.</p>
+
+<p>Agora vamos captar o som. A forma mais simples de fazer isso é usando um microfone. Mas o que é um microfone?</p>
+
+<p>Um microfone é um “transdutor”. Ele capta as vibrações da onda sonora através da variação da pressão do ar que o som provoca ao se propagar. Essa variação de pressão é convertida por um circuito eletrônico interno em variações de intensidade de corrente elétrica (por exemplo com o uso de cristais piezoelétricos; se quiser saber mais sobre a tecnologia pizoelétrica, que converte variações de pressão em tensões elétricas e vice-versa, vá até a seção “Pesquisar” de meu sítio em < www.bpiropo.com.br > e efetue uma busca com o temo “piezoelétrica”). Note que o microfone não digitaliza: ele apenas converte uma onda sonora, analógica, em um “sinal” (variações contínuas de tensão ou intensidade de corrente elétrica), também analógico. </p>
+
+<p>Ou seja: um microfone transforma uma onda sonora em um sinal elétrico cujas variações correspondem às variações da onda sonora, um sinal que representa fielmente a onda sonora (quão “fielmente” depende, naturalmente, da qualidade do microfone, de sua sensibilidade e precisão). Este sinal é enviado ao computador, mais precisamente à controladora (ou “placa”) de som.</p>
+
+<p>Agora sim: circuitos eletrônicos não sabem lidar com variações de pressão mas se entendem perfeitamente com sinais elétricos. O sinal gerado pelo microfone, ao entrar na placa de som, é encaminhado a um circuito denominado ADC (Analog/Digital Converter, ou conversor analógico/digital) cuja função é efetuar uma amostragem (em inglês, “sampling”) do sinal sonoro, colhendo amostras (ou seja, medindo sua intensidade) em intervalos muito curtos e registrando essas intensidades sob a forma de números. </p>
+
+<p>Se voltarmos à Figura 2 veremos que os pontos de amostragem estão ali representados pelas retas verticais, dez mil delas em cada segundo. Colher amostras significa medir a intensidade do sinal exatamente no instante representado por cada reta e anotar esta intensidade sob a forma de um segmento de reta cujo comprimento é proporcional a ela. O resultado será algo parecido com o mostrado na Figura.</p>
+
+
+<img class="img-responsive" src="../images/digitalizando-sons-fig5.jpg" alt="fig5">
+<p>Pronto, agora temos uma coleção de amostras em formato de números, cada um representando o comprimento de um dos segmentos de reta vertical mostrados na Figura 3. Os segmentos situados acima do eixo horizontal são representados por números positivos, os situados abaixo por números negativos. Essa sucessão de números expressos no sistema binário pode ser armazenada em um arquivo. Ela contém todas as informações necessárias para caracterizar uma onda sonora e é, portanto, um arquivo de som digitalizado.
+
+<p>É assim que se digitaliza sons.</p>
+
+<p>Mas não adianta digitalizar um som se ele não puder ser reconstituído para ser ouvido. E essa tarefa também é cumprida por um dos circuitos eletrônicos da controladora (placa) de som, desta vez o DAC (Digital/Analog Converter, ou conversor analógico digital), que cumpre a função inversa do CAD. Essa função corresponde a “unir os pontos” formados pelas extremidades das linhas verticais da Figura 3 reconstituindo a onda que forma o sinal elétrico. Sua função pode ser melhor compreendida examinando-se a Figura</p>
+
+
+<img class="img-responsive" src="../images/digitalizando-sons-fig6.jpg" alt="fig6">
+<p>Para se reproduzir (“tocar”) um som armazenado em um arquivo, este arquivo é lido no disco e seu conteúdo enviado ao DAC da controladora de som sob a forma de uma sucessão de números. O DAC recebe cada um desses números e gera um sinal elétrico cuja intensidade de corrente é, em cada instante, proporcional aos números recebidos sucessivamente. Esse sinal é uma grandeza analógica, o que justifica o nome do DAC. A variação de sua intensidade de corrente é representada pela linha azul na Figura 4. Este sinal é então amplificado (ou seja, tem sua intensidade reforçada) e enviado ao alto-falante das “caixas de som” do computador.</p>
+
+<p>Um alto-falante é também um “transdutor”. Ele executa uma função inversa à do microfone, ou seja, converte o sinal elétrico em som. Isso nada tem a ver com digitalização (tanto o sinal elétrico quanto a onda sonora gerada pelo alto-falante são sinais analógicos), portanto não cabe aqui uma explicação muito detalhada. Basta dizer que isso é feito fazendo o sinal atravessar uma bobina enrolada em torno de um ímã. A variação da corrente elétrica do sinal que atravessa a bobina gera um campo magnético cuja intensidade varia proporcionalmente à do sinal, fazendo o ímã vibrar em consonância com essa variação de intensidade. Este ímã está preso no vértice de um cone de material ligeiramente flexível (uma espécie de papelão) que vibra com o ímã, fazendo o ar vibrar e, assim, reconstituindo o som que foi capturado pelo microfone e digitalizado.</p>
+
+
+<img class="img-responsive" src="../images/digitalizando-sons-fig7.jpg" alt="fig7">
+<p>A fidelidade do som reproduzido, ou seja, o quanto suas qualidades se aproximam das do som original, depende de diversos fatores. Um deles é o equipamento de som propriamente dito, ou seja, o microfone usado para capturar o som, o amplificador (analógico) do sinal e os alto-falantes, fatores responsáveis pela diferença entre o som reproduzido em um radinho de pilha e em um sistema de som de alta qualidade. Mas esse é apenas um dos fatores. Há outros que dependem do processo de digitalização.</p>
+
+<p>Desses, dois são especialmente importantes: a quantização e a taxa de amostragem (“quantization” e “sampling rate”).</p>
+
+<p>A taxa de amostragem representa o número de amostras de som colhidas na unidade de tempo, ou o número de vezes que a amplitude da onda sonora é medida em cada segundo. Ela corresponde à “densidade” das linhas verticais da Figura 2, ou seja, ao número de linhas contidas em cada segundo. Nós usamos em nosso exemplo a taxa fictícia de 10.000 amostras por segundo (ou 10 KHz). Nos sistemas reais, as taxas variam de 8 KHz (telefone que transmite voz digitalizada) até 96 KHz (utilizada no áudio em DVD, discos padrão Blue-Ray e trilhas sonoras de TV de alta definição, ou HDTV).</p>
+
+<p>Os sistemas que usam as controladoras de som mais simples usam uma taxa de amostragem de 11,025 KHz enquanto os mais sofisticados (classificados como “CD quality”, ou qualidade de CD) usam taxas de amostragem quatro vezes maiores, ou 44,1 KHz (também usada nos CDs de áudio). Quanto maior a taxa de amostragem maior a fidelidade do som digitalizado.</p>
+
+<p>Já quantização tem a ver com o número possível de níveis sonoros que cada amostra pode registrar. Para entender, examine novamente a Figura 3. Veja que ela consiste em uma sucessão de linhas verticais, cada uma correspondendo a uma “amostra” do som. O comprimento de cada linha, que representa o nível da intensidade do som naquele momento, corresponde a um número. Vamos supor que eu use um número binário de um byte (8 bits) para armazenar o valor máximo dessa grandeza (que, como você já deve ter percebido, corresponde à maior amplitude de onda que pode ser armazenada). </p>
+
+<p>Nesse caso eu só poderia armazenar 256 níveis diferentes de intensidade (zero e mais os 255 números decimais que podem ser representados com oito bits). Mas se eu usar dois bytes (16 bits) para representar o nível de intensidade, poderei optar por 65.536 níveis diferentes (zero e mais os 65.535 números decimais que podem ser representados com 16 bits). Isso faz com que o som digitalizado possa representar variações muito mais suaves de intensidade. </p>
+
+<p>Portanto quanto maior o número de bits usados para quantizar cada amostra, melhor a qualidade do som. Computadores usam quantizações de oito, doze e dezesseis bits. O som de “qualidade de CD” usa uma quantização de 16 bits para cada um de seus dois canais (o som “estereofônico” digitaliza dois canais, cada canal usando um microfone para capturar o som e um alto-falante para reproduzi-lo; isso dá uma sensação “espacial” ao som percebido por nossos dois ouvidos).</p>
+
+<p>Basicamente, é isso. A única observação que ainda cabe aqui tem a ver com o tamanho do arquivo do som digitalizado. Vimos que, no que diz respeito à digitalização (e não à qualidade do equipamento utilizado para gravar e reproduzir), a qualidade do som depende de dois fatores: taxa de amostragem e quantização. No que toca à taxa de amostragem, quanto maior for ela, melhor será   a qualidade do som, porém igualmente maior será o número de amostras colhidas por segundo. Portanto, maior o tamanho do arquivo necessário para armazená-las. </p>
+
+<p>Já no que diz respeito à quantização, quanto maior o número de bits usados para quantizar cada amostra, melhor a qualidade do som. Porém, da mesma forma, maior será o tamanho do arquivo usado para armazenar o som digitalizado. Se levarmos em conta que um som de excelente qualidade deverá ter efeito estereofônico, ou seja, ser digitalizado em dois canais, o que dobra o tamanho do arquivo de som, poderemos traçar uma relação direta entre qualidade de som e tamanho do arquivo de áudio.</p>
+
+<p>O que poderia nos levar à discussão dos chamados “esquemas de compressão de áudio”, ou o uso de tecnologias capazes de reduzir o tamanho do arquivo sem deteriorar a qualidade do som, como por exemplo a usada no padrão MP3.</p>
+
+<p>Mas isso tem mais a ver com técnicas de programação que com digitalização de som e está muito, muito longe do escopo dessa coluna.</p>
+
+<p>Que, aliás, foi muito além do que eu tinha planejado. Mas se você chegou até aqui, quem sabe achou que valeu a pena...</p>
+
+<br><br>
+
+        <div id="disqus_thread"></div>
+        <script>
+
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://galhardoblog.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        
+      </section>
+
+
+    <br>
+    <footer>
+      <div class="container text-center">
+        <h6 class="text-muted">Desenvolvido com <a href="https://getbootstrap.com/">Bootstrap</a> & <a href="https://www.netlify.com/">Netlify</a></h6>
+      </div>
+      <br>
+      <div class="container text-center">
+        <h6 class="text-muted">&copy; Alex Galhardo 2019 </h6>
+        <br>
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br/><br><h6 class="text-muted">Conteúdo Livre: <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA</h6></a>.
+      </div>
+    </footer>
+
+
+    
+    <!-- DISQUS JS -->
+    <script id="dsq-count-scr" src="//galhardoblog.disqus.com/count.js" async></script>
+
+    <!-- Scripts JS -->
+    <script src="../scripts.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+  </body>
+
+</html>

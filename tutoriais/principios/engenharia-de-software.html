@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+  <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145847620-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-145847620-1');
+    </script>
+
+
+    <!-- SEO Title -->
+    <title>Princípios Engenharia de Software</title>
+
+    <!-- Charset UTF8 -->
+    <meta charset="utf-8">
+
+    <!-- responsive tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO description -->
+    <meta name="description" content="Resumindo os princípios fundamentais da Engenharia de Software.">
+
+    <!-- Author -->
+    <meta name="author" content="Alex Galhardo">
+
+    <!-- Github Icon -->
+    <link rel="icon" href="https://avatars3.githubusercontent.com/u/19540357?s=460&v=4" type="image/x-icon"/>
+
+    <!-- NavBar Emojis -->
+    <script src="https://use.fontawesome.com/41c2dcb978.js"></script>
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://alexgalhardo.com/tutoriais/principios/engenharia-de-software">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Original CSS -->
+    <link href="../../style.css" rel="stylesheet">
+
+  </head>
+
+  
+  <body>
+
+    <!-- Start Scroll Bar -->
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+    <!-- End Scroll Bar -->
+
+    
+    <nav class="navbar navbar-expand-xl navbar-light fixed-top" style="background-color: white;">
+
+      <div class="container col-lg-6">
+
+        <a class="navbar-brand" href="../../index.html" style="color: blue;"><img src="https://avatars3.githubusercontent.com/u/19540357?s=460&v=4" height="35" width="35">Galhardo Blog</a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarText">
+          
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link btn-outline-primary" data-toggle="modal" data-target="#modalSobre" href="#">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn-outline-primary" href="../../tutoriais.html">Tutoriais</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn-outline-primary" href="../../projetos.html">Projetos</a>
+            </li>
+          </ul>
+          
+          <div class="form-inline mt-2 mt-md-0">
+            <a href="https://github.com/alexgalhardo" title="github.com/AlexGalhardo" style="margin-right: 5px;" target="_blank"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+
+            <a href="#" title="aleexgvieira@gmail.com" data-toggle="modal" data-target="#modalContact"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i></a>
+          </div>
+
+          <div class="form-inline mt-2 mt-md-0">
+            <ul class="form-inline navbar-nav mr-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  🇧🇷 Português
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" title="In development..." href="#">🇺🇸 English</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </li>
+    </nav>
+
+
+    <!-- Modal Sobre -->
+    <div class="modal fade" id="modalSobre" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p>Esse blog é desenvolvido e mantido por um estudante, entusiasta e apaixonado por tecnologia, no qual se proponhe a compartilhar conhecimentos diversos não só sobre a área, mais também sobre diversos outros assuntos e reflexões que considera útil compartilhar.</p>
+
+            <p>Tudo que é compartilhado aqui são tanto para estudos pessoais do autor, assim como um meio de colocar o conhecimento em prática, como a escrita em inglês e o desenvolvimento web. Para resumir, compartilho aqui tudo o que eu gostaria que compartilhassem comigo.</p>
+
+            <p>Espero que o blog seja útil para você.</p>
+
+            <br>
+            
+            <p class="text-center"><strong>“Se eu vi mais longe, foi por estar sobre ombros de gigantes.”</strong><br><br>- Isaac Newton</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END Modal Sobre -->
+
+
+    <!-- Modal Contact -->
+    <div class="modal fade" id="modalContact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          
+          <div class="modal-body">
+            <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-netlify="true" action="/success">
+            <p class="hidden">
+            <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+          </p>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Email</label>
+                <input type="email" name="email" class="form-control" id="email" placeholder="Digite o seu email">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Mensagem</label>
+                <textarea class="form-control" id="message" rows="6" placeholder="Digite sua mensagem" name="message"></textarea>
+              </div>
+              <div class="form-group" data-netlify-recaptcha="true"></div>
+              <button type="submit" class="btn btn-outline-primary">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END Modal Contact -->
+  
+
+
+    <main role="main container col-lg-12">
+
+      <section class="blog-text container col-lg-6">
+        
+        <br><br><br><br>
+
+        <h4 class="text-center"><strong>Princípios Engenharia de Software</strong></h4>
+        <h6 class="text-center text-muted">Artigo em constante evolução</h6>
+        <br><br>
+
+
+<h4><strong>Princípios</strong></h4>
+<hr>
+<ul>
+<li>“Software ruim que adicionar valor &gt; Software perfeito que não adiciona valor.”</li>
+<li>“Aprenda a dizer: EU NÃO SEI.”</li>
+<li>“Otimização prematura: a raiz de todo mal.”</li>
+<li>“Lembre-se que os dinossauros quase sempre são as melhores referências.”</li>
+<li>“Quem pensa pouco, erra muito” - Leonardo da Vinci</li>
+<li>“Em Deus eu confio. Todos os outros devem trazer dados.”</li>
+<li>“Falta de dinheiro é a raíz de todo mal.”</li>
+<li>“Não existe bala de prata.”</li>
+<li>“Fazer funcionar &gt; Fazer de forma correta.”</li>
+<li>“Aumentar receitas &gt; diminuir custos.”</li>
+<li>“SaaS &gt; PaaS &gt; IaaS &gt; In-House”</li>
+<li>“Você != Unicórnio”</li>
+<li>“Sempre tente entender o que está acontecendo debaixo dos panos.”</li>
+<li>“Escrever código != programar != engenharia de software”</li>
+<li>“Manutenção &gt; Perfomance”</li>
+<li>“Sem métricas, sem otimização”</li>
+<li>“Nunca pare de questionar”</li>
+<li>“Engenharia de software é 80% PENSANDO sobre o problema, e 20% COMO resolver o problema.”</li>
+<li>“Quanto mais conhecimento você tiver, menos você sabe. EGO = 1 / conhecimento.”</li>
+<li>“Todo mundo deveria se importar com qualidade”</li>
+<li>“Pelo menos 80% do código de um bom software foi refeito, diminuido ou melhor ainda, deletado. Menos é mais.”</li>
+<li>“2+2 não é 5, não importa quantas pessoas digam isso.”</li>
+<li>“Princípios &gt; Analogia.”</li>
+<li>“Converse e aprenda com pessoas mais inteligentes do que você.”</li>
+<li>“Sempre tente usar a única fonte da verdade.”</li>
+<li>“Não reinvente a roda. É para isso que existe frameworks e bibliotecas prontas.”</li>
+<li>“Sempre é bom estudar uma ferramenta profundamente antes de colocar em produção.”</li>
+<li>“Modularização é tudo.”</li>
+<li>“Bons artistas copiam, grandes artistas roubam.”</li>
+<li>“Inovação só existe em um mundo de restrição, e não abundância.”</li>
+<li>“Sempre vai existir alguma coisa para melhorar. Feito é melhor que perfeito.”</li>
+</ul>
+
+<br><h4><strong>Clean Code</strong></h4>
+<hr>
+<h5>Ao definir um nome, precisamos ter em mente dois pontos principais:</h5>
+<ul>
+<li>Ser preciso: precisamos passar a ideia central da nossa variável ou método, sem dar voltas, sendo conciso e direto.</li>
+<li>Não ter medo de nomes grandes: um nome bem descritivo, mesmo que seja grande, irá possibilitar uma melhor compreensão e posterior manutenção do código.</li>
+</ul>
+
+
+<h5>Para finalizar, é recomendável que:</h5>
+<ul>
+<li>Métodos ou Funções: devem ter nome de verbos, para assim, expressar quais são suas finalidades;</li>
+<li>Classes e Objetos: deve ser utilizado substantivos.</li>
+</ul>
+
+
+<br><h5>Segundo Robert C. Martin, a primeira regra das funções é a seguinte:</h5>
+<ul><li>“Elas precisam ser pequenas.”</li></ul>
+
+<h5>Já a segunda regra das funções diz o seguinte:</h5>
+<ul><li>“Elas têm de ser ainda menores.”</li></ul>
+
+
+<br><br><h4><strong>Keep It Simple Stupid - KISS</strong></h4>
+<hr>
+<h5>Testes limpos seguem as regras do acrônimo FIRST (Fast, Indepedent, Repeatable, Self-validation, Timely).</h5>
+
+<ul>
+<li>Rapidez: os testes devem ser rápidos para que possam ser executados diversas vezes;</li>
+<li>Independência: quando testes são dependentes, uma falha pode causar um efeito dominó dificultando a análise individual;</li>
+<li>Repetitividade: deve ser possível repetir o teste em qualquer ambiente;</li>
+<li>Auto validação: bons testes possuem como resultado respostas do tipo “verdadeiro” ou “falso”. Caso contrário, a falha pode se tornar subjetiva;</li>
+<li>Pontualidade: os testes precisam ser escritos antes do código de produção, onde os testes serão aplicados. Caso contrário, o código pode ficar complexo demais para ser testado ou até pode ser que o código não possa ser testado.</li>
+</ul>
+
+
+<br><br><h4><strong>Don't Repeat Yourself - DRY</strong></h4>
+<hr>
+<p>DRY é o acrônimo para Don’t repeat yourself (Não repita a si mesmo). É o conceito que diz que cada parte de conhecimento do sistema deve possuir apenas uma representação. Desta forma, evitando a ambiguidade do código. Em outras palavras, não deve existir duas partes do programa que desempenham a mesma função, ou seja, o famoso copiar e colar no código.
+
+<p>Mas porque evitar repetição? Simples!</p>
+
+<p>Quem tem uma segunda casa na praia, ou no campo, sabe o quão complicado é garantir a manutenção das duas. Mesmo que a repetição possa parecer inofensiva em programas mais simples, ela pode vir a ser um problema à medida que o software vai crescendo e as manutenções e desenvolvimentos se tornam cada vez mais complexos.</p>
+
+<p>Uma boa maneira de evitar a duplicidade do código é aplicar corretamente a técnica de responsabilidade única. Para cada função ou método, utilizar apenas uma parte do método (ou função). O correto é abstrair apenas essa parte e criar um novo!</p>
+
+<p>Algumas ambiguidades de condições não são tão destrutivas ao código, mas com o tempo podem ser. Portanto, procure evitá-las o máximo possível.</p>
+
+<p>Melhor prevenir do que remediar. Esse famoso ditado se aplica ao desenvolvimento de software também. Bons desenvolvedores pensam que as coisas podem dar errado, pois isso eventualmente irá acontecer. Desta forma, o código deve estar preparado para lidar com esses problemas que surgirão.</p>
+
+<p>Hoje a maioria das linguagens possuem recursos para tratar erros nos códigos através de Exceptions e blocos try-catch.</p>
+
+<p>Exceptions: mecanismo que sinaliza eventos excepcionais. Por exemplo, tentar inserir o caractere “a” em uma variável do tipo inteiro;</p>
+
+<p>Blocos try-catch:  capturam as exceções citadas. Portanto, devem ser utilizados de maneira global. Afinal de contas, os métodos já possuem suas funções (que não é tratar erros).</p>
+
+
+<p>Para finalizarmos esse tópico, uma dica excelente para não gerar erros em seu código é simplesmente não utilizar “null”, tanto como parâmetro, quanto para retorno em funções. Muitas vezes, esses retornos exigem verificações desnecessárias que, caso não sejam feitas, podem gerar erros.</p>
+
+
+<br><h5 class="text-muted">Referências</h5>
+<hr>
+<ul>
+<li><a href="https://www.amazon.com/dp/8562409189?tag=bizzi0d-20">Livro Adams Óbvio</a></li>
+<li><a href="https://becode.com.br/clean-code/">BeCode CleanCode</a></li>
+<li><a href="https://www.amazon.com/dp/8562409189?tag=bizzi0d-20">Livro Clean Code - Robert C. Martin</a></li>
+<li><a href="https://www.amazon.com/dp/8562409189?tag=bizzi0d-20">MMM SOFTWARE BOOK</a></li>
+</ul>
+
+
+        <br><br>
+
+        <div id="disqus_thread"></div>
+        <script>
+
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://galhardoblog.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        
+      </section>
+
+    <br>
+
+    <footer>
+      <div class="container text-center">
+        <h6 class="text-muted">Desenvolvido com <a href="https://getbootstrap.com/">Bootstrap</a> & <a href="https://www.netlify.com/">Netlify</a></h6>
+      </div>
+      <br>
+      <div class="container text-center">
+        <h6 class="text-muted">&copy; Alex Galhardo 2019 </h6>
+        <br>
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br/><br><h6 class="text-muted">Conteúdo Livre: <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA</h6></a>.
+      </div>
+    </footer>
+
+    
+    <!-- DISQUS JS -->
+    <script id="dsq-count-scr" src="//galhardoblog.disqus.com/count.js" async></script>
+
+    <!-- Scripts JS -->
+    <script src="../../scripts.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+  </body>
+
+</html>

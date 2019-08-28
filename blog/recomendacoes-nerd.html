@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+  <head>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145847620-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-145847620-1');
+    </script>
+
+
+    <!-- SEO Title -->
+    <title>Recomendações Nerd</title>
+
+    <!-- Charset UTF8 -->
+    <meta charset="utf-8">
+
+    <!-- responsive tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO description -->
+    <meta name="description" content="Compartilhando conhecimento e reflexões sobre a vida, o universo e tudo mais.">
+
+    <!-- Author -->
+    <meta name="author" content="Alex Galhardo">
+
+    <!-- Site Icon -->
+    <link rel="icon" href="avatar.png" type="image/x-icon"/>
+
+    <!-- NavBar Emojis -->
+    <script src="https://use.fontawesome.com/41c2dcb978.js"></script>
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://alexgalhardo.com/recomendacoes-nerd">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Style CSS -->
+    <link href="../style.css" rel="stylesheet">
+
+  </head>
+
+  
+  <body>
+
+    <!-- Start Scroll Bar -->
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+    <!-- End Scroll Bar -->
+
+
+    <nav class="navbar navbar-expand-xl navbar-light fixed-top" style="background-color: white;">
+
+      <div class="container col-lg-6">
+
+        <a class="navbar-brand" href="../index.html" style="color: blue;"><img src="https://avatars3.githubusercontent.com/u/19540357?s=460&v=4" height="35" width="35">Galhardo Blog</a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarText">
+          
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link btn-outline-primary" data-toggle="modal" data-target="#modalSobre" href="#">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn-outline-primary" href="../tutoriais.html">Tutoriais</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn-outline-primary" href="../projetos.html">Projetos</a>
+            </li>
+          </ul>
+          
+          <div class="form-inline mt-2 mt-md-0">
+            <a href="https://github.com/alexgalhardo" title="github.com/AlexGalhardo" style="margin-right: 5px;"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+
+            <a href="#" title="aleexgvieira@gmail.com" data-toggle="modal" data-target="#modalContact"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i></a>
+          </div>
+
+          <div class="form-inline mt-2 mt-md-0">
+            <ul class="form-inline navbar-nav mr-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  🇧🇷 Português
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" title="In development..." href="#">🇺🇸 English</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </li>
+
+    </nav>
+
+
+    <!-- Modal Sobre -->
+    <div class="modal fade" id="modalSobre" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p>Esse blog é desenvolvido e mantido por um estudante, entusiasta e apaixonado por tecnologia, no qual se proponhe a compartilhar conhecimentos diversos não só sobre a área, mais também sobre diversos outros assuntos e reflexões que considera útil compartilhar.</p>
+
+            <p>Tudo que é compartilhado aqui são tanto para estudos pessoais do autor, assim como um meio de colocar o conhecimento em prática, como a escrita em inglês e o desenvolvimento web. Para resumir, compartilho aqui tudo o que eu gostaria que compartilhassem comigo.</p>
+
+            <p>Espero que o blog seja útil para você.</p>
+
+            <br>
+            
+            <p class="text-center"><strong>“Se eu vi mais longe, foi por estar sobre ombros de gigantes.”</strong><br><br>- Isaac Newton</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END Modal Sobre -->
+
+
+    <!-- Modal Contact -->
+    <div class="modal fade" id="modalContact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          
+          <div class="modal-body">
+            <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-netlify="true" action="/success">
+            <p class="hidden">
+            <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+          </p>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Email</label>
+                <input type="email" name="email" class="form-control" id="email" placeholder="Digite o seu email">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Mensagem</label>
+                <textarea class="form-control" id="message" rows="6" placeholder="Digite sua mensagem" name="message"></textarea>
+              </div>
+              <div class="form-group" data-netlify-recaptcha="true"></div>
+              <button type="submit" class="btn btn-outline-primary">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END Modal Contact -->
+  
+
+
+    <main role="main container col-lg-12">
+
+      <section class="blog-text container col-lg-6">
+        
+        <br><br><br><br>
+
+        <h2 class="jumbotron-heading text-center">Recomendações Nerd</h2>
+        <h6 class="text-center text-muted">Artigo em constante evolução</h6>
+        <br>
+
+        <p>Quer saber quais são meus blogs favoritos e que mais me ajudaram e continuam ajudando?</p>
+        <p>Quer saber quais são meus canais do YouTube preferidos, tanto para entretenimento, como para aprender sobre tecnologia, economia, psicologia e tantas outras áreas?</p>
+        <p>Quer saber quais são meus podcasts preferidos, tanto para aprender e ficar atualizado sobre tecnologia, assim como diversas outras áreas?</p>
+        <p>Quer saber quais cursos online eu já fiz e recomendo muito para quem se interessa em alguma tecnologia específica?</p>
+        <p>Quer saber quais animes, filmes e séries eu recomendaria para mim mesmo no passado?</p>
+        <p>Quer saber quais jogos de video game eu recomendaria para mim mesmo no passado?</p>
+        <p>Quer saber quais artigos são referência para mim?</p>
+        <p>Quer saber quais hospedagems eu já testei, uso e recomendo?</p>
+        <p>Então vem comigo, porque esse post poderia economizar e muito meu tempo quando iniciei meus estudos!</p>
+
+        <br>
+        <h4>Sites & Blogs</h4>
+        <hr>
+        <h6>Português</h6>
+        <ul>
+          <li><a href="https://developer.mozilla.org/pt-BR/">Mozila Development Network</a></li>
+          <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+          <li><a href="https://www.akitaonrails.com/">Fabio Akita</a></li>
+          <li><a href="https://www.luiztools.com.br/">Luiz Tools</a></li>
+          <li><a href="https://rocketseat.com.br/">RocketSeat</a></li>
+          <li><a href="http://gabsferreira.com/">Gabs Ferreira</a></li>
+          <li><a href="https://www.profissionaisti.com.br/">Profissionais TI</a></li>
+          <li><a href="https://www.ramonsilva.net/">Ramon Silva</a></li>
+          <li><a href="https://aurelio.net/">Aurelio.net</a></li>
+          <li><a href="https://staltz.com/">André Staltz</a></li>
+          <li><a href="https://viverdeblog.com/">Viver de Blog</a></li>
+          <li><a href="https://site.keeplearning.school/">KeepLearningSchool</a></li>
+          <li><a href="https://henriquebastos.net/">Henrique Bastos</a></li>
+          <li><a href="https://willianjusten.com.br/">William Justen</a></li>
+          <li><a href="https://woliveiras.com.br/">William Oliveira</a></li>
+          <li><a href="https://filipedeschamps.com.br/">Filipe Deschamps</a></li>
+          <li><a href="https://www.felipefialho.com/">Filipe Deschamps</a></li>
+        </ul>
+        <h6>English</h6>
+        <ul>
+          <li><a href="https://waitbutwhy.com/">WaitButWhy</a></li>
+          <li><a href="https://johnresig.com">John Resig</a></li>
+          <li><a href="https://www.infoq.com/">InfoQ</a></li>
+          <li><a href="https://www.thinkwithgoogle.com/">Think With Google</a></li>
+          <li><a href="https://www.joelonsoftware.com/">Joel On Software</a></li>
+          <li><a href="https://developers.google.com/">Developers Google</a></li>
+        </ul>
+
+
+        <br><h4>YouTube</h4>
+        <hr>
+        <h6>Tecnologia</h6>
+        <ul>
+          <li><a href="https://www.origamid.com/">Curso em Video</a></li>
+          <li><a href="https://b7web.com.br/home/">Fábrica de Noobs</a></li>
+          <li><a href="https://www.alura.com.br/">Fabio Akita</a></li>
+          <li><a href="https://rocketseat.com.br/starter">Código Fonte TV</a></li>
+          <li><a href="https://www.luiztools.com.br/meus-cursos/">Bóson Treinamentos</a></li>
+          <li><a href="https://www.luiztools.com.br/meus-cursos/">Filipe Deschamps</a></li>
+        </ul>
+        <h6>Desenvolvimento Pessoal</h6>
+        <ul>
+          <li><a href="https://www.origamid.com/">NeuroVox</a></li>
+          <li><a href="https://b7web.com.br/home/">Canal do Moscoso</a></li>
+          <li><a href="https://www.alura.com.br/">Metaforando</a></li>
+          <li><a href="https://rocketseat.com.br/starter">Meteoro Brasil</a></li>
+          <li><a href="https://www.luiztools.com.br/meus-cursos/">Casa do Saber</a></li>
+        </ul>
+        <h6>Entretenimento e Outros</h6>
+        <ul>
+          <li><a href="https://www.origamid.com/">Zangado</a></li>
+          <li><a href="https://b7web.com.br/home/">Bunka Pop</a></li>
+          <li><a href="https://www.alura.com.br/">Pipocando</a></li>
+          <li><a href="https://rocketseat.com.br/starter">Cronosfera</a></li>
+        </ul>
+
+
+        <br><h4>Cursos Onlines</h4>
+        <hr>
+        <ul>
+          <li><a href="https://pt.khanacademy.org">Khan Academy</a></li>
+          <li><a href="https://code.org/">Code.org</a></li>
+          <li><a href="https://www.codemonkey.com/">CodeMonkey</a></li>
+          <li><a href="https://codecombat.com/">CodeCombat</a></li>
+          <li><a href="https://www.coursera.org/learn/learning-how-to-learn">Coursera - Learning How to Learn: Powerful mental tools to help you master tough subjects</a></li>
+          <li><a href="https://lagunita.stanford.edu/courses/course-v1:Engineering+DYL+Ongoing/course/">Stanford - Designing Your Carrer</a></li>
+          <li><a href="https://www.origamid.com/">Origamid</a></li>
+          <li><a href="https://b7web.com.br/home/">B7WEB Bonieky Lacerda</a></li>
+          <li><a href="https://www.alura.com.br/">Alura Cursos Online</a></li>
+          <li><a href="https://rocketseat.com.br/starter">RocketSeat</a></li>
+          <li><a href="https://www.luiztools.com.br/meus-cursos/">Cursos Luiz Tools</a></li>
+          <li><a href="https://cursodearduino.net/">Curso Arduino.net</a></li>
+          <li><a href="https://www.musicdot.com.br/">MusicDot</a></li>
+          <li><a href="https://www.udemy.com/user/alex-galhardo-vieira/">Udemy - Meu Perfil</a></li>
+        </ul>
+
+
+        <br><h4>Podcasts</h4>
+        <hr>
+        <ul>
+          <li><a href="https://www.origamid.com/">Hipsters.tech</a></li>
+          <li><a href="https://b7web.com.br/home/">DevNaEstrada.com.br</a></li>
+          <li><a href="https://www.alura.com.br/">Geração de Valor</a></li>
+          <li><a href="https://rocketseat.com.br/starter">JovemNerd</a></li>
+          <li><a href="https://www.luiztools.com.br/meus-cursos/">GunCast</a></li>
+        </ul>
+
+
+        <br><h4>Animes</h4>
+        <hr>
+        <ul>
+          <li><a href="https://www.origamid.com/">Kaiji</a></li>
+          <li><a href="https://b7web.com.br/home/">Hunter x Hunter</a></li>
+          <li><a href="https://www.alura.com.br/">FullMetal Alchmist Brotherhood</a></li>
+          <li><a href="https://rocketseat.com.br/starter">Death Note</a></li>
+          <li><a href="https://www.luiztools.com.br/meus-cursos/">Code Gear Lelouch</a></li>
+        </ul>
+
+
+        <br><h4>Filmes e Séries</h4>
+        <hr>
+        <ul>
+          <li><a href="https://www.origamid.com/">Filme 1</a></li>
+          <li><a href="https://b7web.com.br/home/">Filme 2</a></li>
+          <li><a href="https://www.alura.com.br/">Filme 3</a></li>
+          <li><a href="https://rocketseat.com.br/starter">Filme 4</a></li>
+          <li><a href="https://www.luiztools.com.br/meus-cursos/">Filme 5</a></li>
+        </ul>
+
+
+        <br><h4>Video Game</h4>
+        <hr>
+        <ul>
+          <li><a href="https://www.origamid.com/">Jogo 1</a></li>
+          <li><a href="https://b7web.com.br/home/">Jogo 2</a></li>
+          <li><a href="https://www.alura.com.br/">Jogo 3</a></li>
+          <li><a href="https://rocketseat.com.br/starter">Jogo 4</a></li>
+          <li><a href="https://www.luiztools.com.br/meus-cursos/">Jogo 5</a></li>
+        </ul>
+
+
+        <br><h4>Hospedagens</h4>
+        <hr>
+        <ul>
+          <li><a href="https://www.umbler.com/br">Umbler</a></li>
+          <li><a href="https://br.bluehost.com/">BlueHost</a></li>
+          <li><a href="https://www.netlify.com">Netlify</a></li>
+          <li><a href="https://pages.github.com/">GitHub Pages</a></li>
+          <li><a href="https://www.hostgator.com.br/">HostGator</a></li>
+        </ul>
+
+
+        <br><h4>Artigos</h4>
+        <hr>
+        <ul>
+          <li><a href="https://norvig.com/21-days.html">Teach Yourself Programming in 10 Years</a></li>
+          <li><a href="https://taligarsiel.com/Projects/howbrowserswork1.htm">How browsers work - Behind the scenes of modern web browsers</a></li>
+          <li><a href="https://johnresig.com/blog/write-code-every-day/">Write Code Everyday</a></li>
+          <li><a href="https://12factor.net/">The Twelve Factor App</a></li>
+        </ul>
+
+
+        <br><br>
+
+        <div id="disqus_thread"></div>
+        <script>
+
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://galhardoblog.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        
+      </section>
+
+
+    <br>
+    <footer>
+      <div class="container text-center">
+        <h6 class="text-muted">Desenvolvido com <a href="https://getbootstrap.com/">Bootstrap</a> & <a href="https://www.netlify.com/">Netlify</a></h6>
+      </div>
+      <br>
+      <div class="container text-center">
+        <h6 class="text-muted">&copy; Alex Galhardo 2019 </h6>
+        <br>
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br/><br><h6 class="text-muted">Conteúdo Livre: <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA</h6></a>.
+      </div>
+    </footer>
+    
+    <!-- DISQUS JS -->
+    <script id="dsq-count-scr" src="//galhardoblog.disqus.com/count.js" async></script>
+
+    <!-- Scripts JS -->
+    <script src='https://d33wubrfki0l68.cloudfront.net/js/906480851f9df67ea2dd39170b3c6645679257f4/scripts.js'></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+  </body>
+
+</html>

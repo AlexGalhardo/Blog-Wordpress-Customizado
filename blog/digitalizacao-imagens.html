@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+  <head>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145847620-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-145847620-1');
+    </script>
+
+
+    <!-- SEO Title -->
+    <title>Digitalização de Imagens</title>
+
+    <!-- Charset UTF8 -->
+    <meta charset="utf-8">
+
+    <!-- responsive tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO description -->
+    <meta name="description" content="Transcrevendo um artigo bastante interessante de como computadores e tecnologia digital digitalizam imagens.">
+
+    <!-- Author -->
+    <meta name="author" content="Alex Galhardo">
+
+    <!-- Site Icon -->
+    <link rel="icon" href="avatar.png" type="image/x-icon"/>
+
+    <!-- NavBar Emojis -->
+    <script src="https://use.fontawesome.com/41c2dcb978.js"></script>
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://alexgalhardo.com/blog/digitalizacao-imagens">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Style CSS -->
+    <link href="../style.css" rel="stylesheet">
+
+  </head>
+
+  
+  <body>
+
+    <!-- Start Scroll Bar -->
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+    <!-- End Scroll Bar -->
+
+
+    <nav class="navbar navbar-expand-xl navbar-light fixed-top" style="background-color: white;">
+
+      <div class="container col-lg-6">
+
+        <a class="navbar-brand" href="../index.html" style="color: blue;"><img src="https://avatars3.githubusercontent.com/u/19540357?s=460&v=4" height="35" width="35">Galhardo Blog</a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarText">
+          
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link btn-outline-primary" data-toggle="modal" data-target="#modalSobre" href="#">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn-outline-primary" href="../tutoriais.html">Tutoriais</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn-outline-primary" href="../projetos.html">Projetos</a>
+            </li>
+          </ul>
+          
+          <div class="form-inline mt-2 mt-md-0">
+            <a href="https://github.com/alexgalhardo" title="github.com/AlexGalhardo" style="margin-right: 5px;" target="_blank"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+
+            <a href="#" title="aleexgvieira@gmail.com" data-toggle="modal" data-target="#modalContact"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i></a>
+          </div>
+
+          <div class="form-inline mt-2 mt-md-0">
+            <ul class="form-inline navbar-nav mr-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  🇧🇷 Português
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" title="In development..." href="#">🇺🇸 English</a>
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+      </li>
+    </nav>
+
+
+    <!-- Modal Sobre -->
+    <div class="modal fade" id="modalSobre" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p>Esse blog é desenvolvido e mantido por um estudante, entusiasta e apaixonado por tecnologia, no qual se proponhe a compartilhar conhecimentos diversos não só sobre a área, mais também sobre diversos outros assuntos e reflexões que considera útil compartilhar.</p>
+
+            <p>Tudo que é compartilhado aqui são tanto para estudos pessoais do autor, assim como um meio de colocar o conhecimento em prática, como a escrita em inglês e o desenvolvimento web. Para resumir, compartilho aqui tudo o que eu gostaria que compartilhassem comigo.</p>
+
+            <p>Espero que o blog seja útil para você.</p>
+
+            <br>
+            
+            <p class="text-center"><strong>“Se eu vi mais longe, foi por estar sobre ombros de gigantes.”</strong><br><br>- Isaac Newton</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END Modal Sobre -->
+
+
+    <!-- Modal Contact -->
+    <div class="modal fade" id="modalContact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          
+          <div class="modal-body">
+            <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-netlify="true" action="/success">
+            <p class="hidden">
+            <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+          </p>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Email</label>
+                <input type="email" name="email" class="form-control" id="email" placeholder="Digite o seu email">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Mensagem</label>
+                <textarea class="form-control" id="message" rows="6" placeholder="Digite sua mensagem" name="message"></textarea>
+              </div>
+              <div class="form-group" data-netlify-recaptcha="true"></div>
+              <button type="submit" class="btn btn-outline-primary">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END Modal Contact -->
+
+  
+    <main role="main container col-lg-12">
+      <section class="blog-text container col-lg-6">      
+        <br><br><br><br>
+
+        <h4 class="text-center"><strong>Digitalização de Imagens</strong></h4>
+        <h6 class="text-center text-muted">5 minutos de leitura</h6>
+        <h6 class="text-center text-muted">Transcrevendo</h6>
+        <br>
+        <h6 class="text-muted">
+            Obs: Esse texto é de total autoria e todos os créditos são de <a href="http://www.bpiropo.com.br">© Benito Piropo Da-Rin</a>. 
+            <br>
+            O texto original foi retirado de: <a href="http://www.bpiropo.com.br/fpc20050110.htm">http://www.bpiropo.com.br/fpc20050110.htm</a>    
+            <br>
+            Compartilho o texto aqui tanto para estudos pessoais como para compartilhar para mais pessoas que se interessam por esse conhecimento.
+        </h6>
+        <br>
+
+        <p>Quando discutimos o emprego do sistema binário para processar dados comentamos que o uso exclusivo dos algarismos “ 1” e “ 0” nos circuitos internos dos computadores pode levar a crer que essas máquinas apenas servem para resolver problemas muito específicos, cujas grandezas de entrada e saída assumem apenas dois valores e que portanto sua utilização há de ser extremamente limitada. Porém, na mesma ocasião, afirmamos que esta conclusão é falsa, pois toda e qualquer grandeza do mundo real, seja ela qual for, pode ser codificada e representada sob a forma de um conjunto de números, um procedimento denominado “digitalização”.</p>
+
+<p>Mas como isso é possível?</p>
+
+<p>Vamos começar, à guisa de exemplo, com a descrição da digitalização de imagens. E já que vamos trabalhar com imagens, façamo-lo em grande estilo. Diga lá: em termos de criação do engenho humano, qual seria a imagem mais famosa do mundo?</p>
+
+<p>Não sei em qual imagem você pensou. Mas, para mim, não há dúvida que a mais famosa das imagens jamais produzida pela genialidade humana é “La Gioconda”, magnífica pintura de Leonardo da Vinci também conhecida por Mona Lisa. Uma imagem tão famosa que uma pesquisa no banco de imagens do Google com “gioconda” retorna 6.740 imagens, “monalisa” retorna 14.800 e “mona lisa” retorna 30.500. Portanto, mesmo aqueles que discordarem do fato dela ser “a mais famosa” hão de concordar que pelo menos ela é suficientemente famosa para que a usemos como exemplo. E, para quem não lembra dela, veja aí na Figura 1 como ela é (imagem obtida na Internet sem citação do autor da foto).</p>
+
+
+<img class="img-responsive" src="../images/digitalizacao-imagens-fig1.jpg" alt="fig1">
+
+<p>Essa pintura é tão admirável que já inspirou músicas, poemas, contos e paixões. Quem já a viu de perto não pode negar que ela contém, realmente, uma magia que faz com que seja inviável permanecer impassível diante dela. Dizem que a principal razão desse mistério é seu sorriso enigmático. Vamos, então, examiná-lo um pouco mais de perto. Veja, na Figura 2, o sorriso da Mona Lisa grandemente ampliado.</p>
+
+
+<img class="img-responsive" src="../images/digitalizacao-imagens-fig2.jpg" alt="fig2">
+
+<p>Ficou meio esquisito, não? Parece meio borrado, surgem umas marcas irregulares, a figura parece granulada, mal se consegue distinguir o sorriso. Mas ele está lá. A Figura 2 nada mais é que a boca da Gioconda muito ampliada. Por que será que apareceram aquelas irregularidades? Vamos ver. Ampliemos mais ainda, desta vez apenas o canto direito da boca. O resultado é o mostrado na Figura 3.</p>
+
+
+<img class="img-responsive" src="../images/digitalizacao-imagens-fig3.jpg" alt="fig3">
+
+<p>Agora, a imagem da Figura 3 ficou quase irreconhecível. Se não soubéssemos do que se trata, ela não faria sentido. Mas comparando com atenção com a Figura 2 dá para perceber que a Figura 3, de fato, mostra o canto direito do sorriso da Mona Lisa. Agora, repare nela com mais atenção e note que ela não passa de uma montagem feita a partir de pequenos quadrados coloridos, ou células, cada célula de uma cor homogênea (se você não percebe isso nesta imagem, examine-a em alta resolução).</p>
+
+<p>Ora, mas a Figura 3 nada mais é que um trecho da Figura 1 extremamente ampliada. E, se é assim, é fácil concluir que a própria Figura 1 também pode ser decomposta em pequenas células, cada uma de uma única cor homogênea. Essas células de imagens somente não são percebidas na Figura 1 porque são demasiadamente pequenas para serem distinguidas a olho nu. Mas se toda a Figura 1 for ampliada na mesma proporção em que ampliamos o canto da boca da Gioconda exibido na Figura 3, suas células de imagem seriam perfeitamente identificáveis.</p>
+
+<p>Esse procedimento, evidentemente, pode ser repetido para qualquer imagem. Ou seja: subdividi-la em células, cada uma contendo uma única cor homogênea.</p>
+
+<p>Para reproduzir a imagem, então, basta desenhar célula por célula, cada uma na sua posição, e atribuir a cada célula a cor correspondente à da imagem original.</p>
+
+<p>Se conseguirmos exprimir as cores através de números, a imagem pode ser inteiramente codificada, célula a célula, e reproduzida usando esses códigos.</p>
+
+<p>Mas será que podemos codificar as cores?</p>
+
+<p>Explicando melhor: imagine que você deseja informar a uma pessoa situada em um local distante a coloração exata de um determinado objeto. O problema é que você não tem nenhuma forma de transmitir a essa pessoa uma imagem em cores. Mas pode transmitir números. Será que dá para exprimir cores através de números?</p>
+
+<p>Encerramos a coluna passada com uma pergunta: como enviar a um interlocutor situado à distância a matiz exata de uma cor usando apenas um dispositivo capaz de transmitir números?</p>
+
+<p>Bem, se tanto você quanto seu interlocutor dispuserem da mesma paleta de cores e da mesma tabela que atribua um número a cada matiz de cada cor, a coisa fica mais fácil. Basta que você compare a cor do objeto com as cores disponíveis na paleta até encontrar uma cor que coincida exatamente com a do objeto, anote o número atribuído a essa cor e o transmita para a outra pessoa. Ela, por sua vez, entrará na tabela com o número que você enviou e ao descobrir na paleta a cor correspondente saberá exatamente a coloração de seu objeto. Tudo o que vocês precisam é uma paleta que contenha todas as cores visíveis.</p>
+
+<p>Ora, mas vocês já têm essa paleta. Aliás, todos a temos. Basta olhar para o céu em um dia chuvoso mas em que o sol brilhe através das nuvens que, com um pouco de sorte, você a verá. Ela chama-se “arco-íris” e corresponde à decomposição da luz branca em todas as cores do espectro visível. Note bem: TODAS as cores do espectro visível, ou seja, todas as que podem ser percebidas pelo nosso olho. Elas são mostradas na Figura 1.</p>
+
+
+<img class="img-responsive" src="../images/digitalizacao-imagens-fig4.jpg" alt="fig4">
+
+<p>Neste ponto é imprescindível fazer uma observação: se você está lendo essa coluna em um computador, o que é bastante provável uma vez que ela é publicada na Internet, o que você vê exatamente na Figura 1 (assim como nas demais figuras) depende essencialmente da qualidade e dos ajustes de seu monitor de vídeo. Embora você vá entender melhor as razões disso na medida que prosseguir a leitura, fica desde agora estabelecido que se seu monitor é de alta resolução e está ajustado para exibir grande número de cores, você verá uma imagem suave cujas cores variam gradualmente (ou em “degradê”). Do contrário você verá apenas faixas verticais perfeitamente identificáveis, cada uma de uma cor homogênea. Se for este o caso, use a imaginação e visualize a Figura 1 pensando no arco-íris, onde as cores se mesclam tão suavemente que é impossível distinguir onde “termina” uma e “começa” a vizinha.</p>
+
+<p>Agora imagine que você não é muito exigente em matéria de cores e não faz questão de uma reprodução fiel. Então pegue a Figura 1 e a divida horizontalmente em 256 faixas verticais. Cada faixa corresponderá a uma cor. Numere as faixas de zero a 255, zero correspondendo à faixa vertical preta da extremidade esquerda, 255 correspondendo à faixa branca da extremidade direita e os demais números correspondendo a faixas coloridas igualmente espaçadas ao longo da figura. Pronto, aí está sua tabela de cores, cada cor correspondendo a um número (se você estiver lendo isso em um computador e quiser se dar ao trabalho de ver como essa coisa fica de verdade, ajuste seu monitor para exibir apenas 256 cores e examine novamente a Figura 1).</p>
+
+<p>É claro que se você usar esse critério para reproduzir imagens o resultado será uma reprodução de péssima qualidade. No que diz respeito a cores, para melhorar a qualidade da reprodução você pode recorrer à mesma paleta de cores da Figura 1, dividindo-a em um número maior de faixas verticais. Se não for demasiadamente exigente, divida em 65.536 cores e terá uma reprodução razoavelmente satisfatória (lembre-se: não importa como você o veja na Figura 1, o espectro visível real, o do arco-íris, contém TODAS as cores que podem ser percebidas pelo olho humano). Mas se você for muito exigente mesmo e fizer questão de uma qualidade de reprodução extraordinária, divida-a em mais de dezesseis milhões de faixas verticais e terá mais de dezesseis milhões de cores (precisamente 16.777.216 cores; logo veremos porque usar esses números aparentemente tão estranhos).</p>
+
+<p>O problema de transmitir uma cor está resolvido. Agora vejamos como transmitir a imagem inteira.</p>
+
+<p>Na coluna passada concluímos que qualquer figura pode ser subdividida em pequenos pontos, denominados células de imagem, atribuindo-se a cada um deles uma cor homogênea (lembre-se da grande ampliação do trecho da imagem, que ficou reduzida a uma colagem de pequenos quadrados de cor uniforme; cada um daqueles quadrados é uma célula de imagem).</p>
+
+<p>Pois bem: se no que diz respeito à cor, a qualidade da imagem depende do número de faixas em que dividimos o espectro, no que toca à nitidez da imagem sua qualidade dependerá do número de células em que foi dividida: quanto maior este número, melhor a qualidade (ou seja: quanto menor o tamanho da célula de imagem, melhor a qualidade).</p>
+
+<p>Podemos considerar que um retângulo, como a tela de seu monitor de vídeo, pode ser subdividido em células que se dispõem lado a lado em linhas situadas umas sobre as outras. Por exemplo: imagine que sua tela possa ser dividida em 480 linhas horizontais, cada uma delas contendo 640 pontos, cada um deles podendo assumir uma cor uniforme. Esses pontos seriam as células de imagem. Agora, imagine que a tela contenha uma imagem que você deseja codificar para enviar a seu interlocutor. Será possível?</p>
+
+<p>Sim, vai dar um trabalho danado, mas é possível. Comece pelo ponto situado no canto superior esquerdo. Compare sua cor com a paleta de cores e anote o número correspondente. Passe para o ponto seguinte da mesma linha horizontal e repita o procedimento ponto a ponto, anotando o número da cor de cada ponto até o ponto situado na extremidade direita da primeira linha. Passe então para o primeiro ponto da segunda linha, o situado mais a esquerda, e anote o número de sua cor após o número da cor do último ponto da linha de cima. Faça isso linha a linha, anotando um número de cor depois do outro. Note que você não precisa se preocupar com a posição do ponto, já que como você está anotando sempre da esquerda para a direita, linha a linha, de cima para baixo, a posição de cada ponto já fica estabelecida pela posição do número de sua cor na lista que você está produzindo. O resultado será uma longa lista de 307.200 números (o produto de 640 linhas por 480 colunas) cada um representando a cor de uma célula de imagem.</p>
+
+<p>Quando seu interlocutor receber a lista, pegará o primeiro número e, recorrendo à tabela, descobrirá a que cor ele corresponde, desenhando um pequeno ponto desta cor no canto superior esquerdo de sua tela. Fará o mesmo com o segundo número e obterá o ponto situado ao lado do primeiro. Repetirá este procedimento 640 vezes para desenhar a primeira linha e prosseguirá, número a número, linha a linha, até chegar ao último ponto, o situado na extremidade direita da linha situada na base da tela. Quando ele terminar, terá uma reprodução exata da imagem contida em sua tela. Uma reprodução idêntica porque foi criada ponto a ponto com cores exatamente iguais.</p>
+
+<p>Agora, paremos um pouco para examinar o que acabamos de fazer. Pegamos uma imagem original, subdividimo-la em pontos, atribuímos a cada ponto uma cor homogênea e convertemos essas cores para números. Com números podem ser expressos em qualquer sistema numérico, nada nos impede de exprimir os números das cores no sistema binário. Resumindo: codificamos uma imagem em números expressos no sistema binário.</p>
+
+<p>Acabamos de digitalizar nossa primeira imagem.</p>
+
+<p>Mas como classificar a qualidade dessa imagem digitalizada? Explicando melhor: digamos que ela seja a reprodução do quadro La Gioconda. Como compará-la em termos de qualidade de reprodução com o quadro original?</p>
+
+<p>Bem, isso depende do número de pontos (células de imagem) em que a imagem original foi dividida e do número de cores em que foi dividido o espectro visível.</p>
+
+<p>O número de células em que uma imagem é dividida denomina-se “resolução” da imagem. Imagens de alta resolução são aquelas divididas em grande número de pequenos pontos. Como você já deve ter percebido, “célula de imagem” em inglês é “picture cell”, que se abrevia “pixel”. Os monitores de vídeo exprimem a resolução das imagens que exibem pelo produto do número de linhas pelo número de colunas. As resoluções mais comuns atualmente variam de 480 linhas por 640 colunas (640x480) a 1.200 linhas por 1.600 colunas (1.600x1.200). Quanto maior a resolução, melhor a qualidade da imagem reproduzida em termos de nitidez.</p>
+
+<p>Já o número de cores pode ser ajustado para 256, para 65.656 (“High Color”, ou 64K colors) ou para 16.777.216 (“True color”, ou 16M cores). Esses números não foram escolhidos ao acaso. Como já mencionado, para poder ser processado por um computador, o resultado da digitalização tem que ser expresso no sistema binário. Ora, 256 é o número de cores que podem ser expressas usando um número binário de oito bits (ou um byte), 65.656 cores podem ser expressas em um número de dezesseis bits (dois bytes) e 16.777.216 cores podem ser expressas em um número de 24 bits (três bytes). Assim, quando se usam apenas 256 cores, para exprimir a cor de uma célula de imagem, ou pixel, basta um byte. Já uma imagem em “High Color” (64 K cores) usa dois bytes por pixel e uma imagem “True Color” (16M cores) usa três bytes por pixel (alguns controladores de vídeo usam quatro bytes por pixel, mas isso não aumenta o número de cores, aumenta apenas a rapidez com que a imagem é reproduzida porque os bytes que representam as cores são lidos na memória mais rapidamente se agrupados quatro a quatro; mesmo porque não adianta aumentar o número de cores além de dezesseis milhões, já que o olho humano não teria sensibilidade para distinguir matizes tão próximos).</p>
+
+<p>Em resumo: combinando a resolução com o número de cores pode-se reproduzir com a qualidade desejada qualquer imagem baseando-se apenas em uma longa lista de números, cada um deles representando a cor de um “pixel”, ou célula de imagem. Uma imagem de tamanho razoável (digamos, do tamanho da tela de um monitor de 21 polegadas) com resolução de 1.200x1.600 e “True color” nada fica a dever ao original. Já uma imagem com resolução de 640x480 e 256 cores, mesmo em um velho monitor de 14 polegadas, apresenta uma qualidade extremamente pobre.</p>
+
+<p>Pronto: em duas colunas conseguimos detalhar razoavelmente o processo de representar imagens através de números, ou a “digitalização de imagens”. Um processo que consiste em converter imagens em uma lista (ou “vetor”) de números binários que podem ser processados pelo computador e que permitem armazená-las nos dispositivos de armazenamento (como discos rígidos, CDs e DVDs) ou reproduzi-las nos dispositivos de exibição de imagens (como monitores de vídeo e projetores).</p>
+
+
+<br><br>
+
+        <div id="disqus_thread"></div>
+        <script>
+
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://galhardoblog.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        
+      </section>
+
+
+    <footer>
+      <div class="container text-center">
+        <h6 class="text-muted">Desenvolvido com <a href="https://getbootstrap.com/">Bootstrap</a> & <a href="https://www.netlify.com/">Netlify</a></h6>
+      </div>
+      <br>
+      <div class="container text-center">
+        <h6 class="text-muted">&copy; Alex Galhardo 2019 </h6>
+        <br>
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br/><br><h6 class="text-muted">Conteúdo Livre: <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA</h6></a>.
+      </div>
+    </footer>
+
+    
+    <!-- DISQUS JS -->
+    <script id="dsq-count-scr" src="//galhardoblog.disqus.com/count.js" async></script>
+
+    <!-- Scripts JS -->
+    <script src="../scripts.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+  </body>
+
+</html>

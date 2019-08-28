@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+  <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145847620-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-145847620-1');
+    </script>
+
+
+    <!-- SEO Title -->
+    <title>Design Pattern Dependency Injection</title>
+
+    <!-- Charset UTF8 -->
+    <meta charset="utf-8">
+
+    <!-- responsive tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO description -->
+    <meta name="description" content="Referência rápida para o design pattern Dependency Injection">
+
+    <!-- Author -->
+    <meta name="author" content="Alex Galhardo">
+
+    <!-- Github Icon -->
+    <link rel="icon" href="https://avatars3.githubusercontent.com/u/19540357?s=460&v=4" type="image/x-icon"/>
+
+    <!-- NavBar Emojis -->
+    <script src="https://use.fontawesome.com/41c2dcb978.js"></script>
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://alexgalhardo.com/tutoriais/pattern/dependency-injection">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Original CSS -->
+    <link href="../../style.css" rel="stylesheet">
+
+  </head>
+
+  
+  <body>
+
+    <!-- Start Scroll Bar -->
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+    <!-- End Scroll Bar -->
+
+    
+    <nav class="navbar navbar-expand-xl navbar-light fixed-top" style="background-color: white;">
+
+      <div class="container col-lg-6">
+
+        <a class="navbar-brand" href="../../index.html" style="color: blue;"><img src="https://avatars3.githubusercontent.com/u/19540357?s=460&v=4" height="35" width="35">Galhardo Blog</a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarText">
+          
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link btn-outline-primary" data-toggle="modal" data-target="#modalSobre" href="#">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn-outline-primary" href="../../tutoriais.html">Tutoriais</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn-outline-primary" href="../../projetos.html">Projetos</a>
+            </li>
+          </ul>
+          
+          <div class="form-inline mt-2 mt-md-0">
+            <a href="https://github.com/alexgalhardo" title="github.com/AlexGalhardo" style="margin-right: 5px;" target="_blank"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+
+            <a href="#" title="aleexgvieira@gmail.com" data-toggle="modal" data-target="#modalContact"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i></a>
+          </div>
+
+          <div class="form-inline mt-2 mt-md-0">
+            <ul class="form-inline navbar-nav mr-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  🇧🇷 Português
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" title="In development..." href="#">🇺🇸 English</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </li>
+    </nav>
+
+
+    <!-- Modal Sobre -->
+    <div class="modal fade" id="modalSobre" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p>Esse blog é desenvolvido e mantido por um estudante, entusiasta e apaixonado por tecnologia, no qual se proponhe a compartilhar conhecimentos diversos não só sobre a área, mais também sobre diversos outros assuntos e reflexões que considera útil compartilhar.</p>
+
+            <p>Tudo que é compartilhado aqui são tanto para estudos pessoais do autor, assim como um meio de colocar o conhecimento em prática, como a escrita em inglês e o desenvolvimento web. Para resumir, compartilho aqui tudo o que eu gostaria que compartilhassem comigo.</p>
+
+            <p>Espero que o blog seja útil para você.</p>
+
+            <br>
+            
+            <p class="text-center"><strong>“Se eu vi mais longe, foi por estar sobre ombros de gigantes.”</strong><br><br>- Isaac Newton</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END Modal Sobre -->
+
+
+    <!-- Modal Contact -->
+    <div class="modal fade" id="modalContact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          
+          <div class="modal-body">
+            <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-netlify="true" action="/success">
+            <p class="hidden">
+            <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+          </p>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Email</label>
+                <input type="email" name="email" class="form-control" id="email" placeholder="Digite o seu email">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Mensagem</label>
+                <textarea class="form-control" id="message" rows="6" placeholder="Digite sua mensagem" name="message"></textarea>
+              </div>
+              <div class="form-group" data-netlify-recaptcha="true"></div>
+              <button type="submit" class="btn btn-outline-primary">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END Modal Contact -->
+
+  
+
+
+    <main role="main container col-lg-12">
+      <section class="blog-text container col-lg-6">
+        <br><br><br><br>
+
+        <h4 class="text-center"><strong>Design Pattern Dependency Injection</strong></h4>
+        <h6 class="text-center text-muted">Artigo em constante evolução</h6>
+        <br><br>
+
+        <script src="https://gist.github.com/AlexGalhardo/12af081c1a1c768665ddac1af2ceba74.js"></script>
+
+        <br><br>
+
+        <div id="disqus_thread"></div>
+        <script>
+
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://galhardoblog.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        
+      </section>
+
+    <br>
+
+    <footer>
+      <div class="container text-center">
+        <h6 class="text-muted">Desenvolvido com <a href="https://getbootstrap.com/">Bootstrap</a> & <a href="https://www.netlify.com/">Netlify</a></h6>
+      </div>
+      <br>
+      <div class="container text-center">
+        <h6 class="text-muted">&copy; Alex Galhardo 2019 </h6>
+        <br>
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br/><br><h6 class="text-muted">Conteúdo Livre: <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA</h6></a>.
+      </div>
+    </footer>
+
+    
+    <!-- DISQUS JS -->
+    <script id="dsq-count-scr" src="//galhardoblog.disqus.com/count.js" async></script>
+
+    <!-- Scripts JS -->
+    <script src="../../scripts.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+  </body>
+
+</html>
