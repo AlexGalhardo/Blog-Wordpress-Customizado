@@ -4,28 +4,23 @@
 
 <?
 /** ANTIGO FORMATO 
+
 // Mudar Aqui o e-mail
-
 $email_envio = 'contatoalexgalhardo@gmail.com'; // E-mail receptor
-$email_pass = 'galhardoalexBR@159'; // Senha do e-mail
-
+$email_pass = 'password_here'; // Senha do e-mail
 $site_name = 'Galhardo Blog'; // Nome do Site
 $site_url = 'http://localhost/wordpress'; // URL do Site
-
 $host_smtp = 'smtp.gmail.com'; // HOST SMTP Ex: smtp.domain.com.br
 $host_port = '587'; // Porta do Host
 
 // Variáveis do Formulário
-
 $email = $_POST['email'];
 $mensagem = $_POST['mensagem'];
 
 // Conteúdo do Formulário
-
 $body_content = "De: $nome \n E-mail: $email \n Telefone: $telefone \n Mensagem: $mensagem";
 
 // Não mudar a partir daqui
-
 if ($_POST['leaveblank'] != '' or $_POST['dontchange'] != 'http://') {
 
   echo "<h2

@@ -1,4 +1,4 @@
-  <footer>
+    <footer>
       <div class="container text-center">
         <h6 class="text-muted">Blog Em Constante Evolução</h6>
       </div>
@@ -12,8 +12,8 @@
 
 
     <!-- Scripts JS -->
-    <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/jquery-3.1.1.min.js"></script>
-    <script src="<?php echo get_stylesheet_directory_uri(); ?>/scripts.js"></script>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/jquery-3.1.1.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/scripts.js"></script>
 
     <!-- Bootstrap core JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
